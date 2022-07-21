@@ -1,0 +1,45 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "1",
+        "author": "CraftingGamerTom",
+        "comment": "Initial DB Setup",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN"
+          },
+          {
+            "not": {
+              "tableExists": {
+                "tableName": "primitive_data_type"
+              }
+            }
+          },
+          {
+            "not": {
+              "tableExists": {
+                "tableName": "primitive_data_type"
+              }
+            }
+          },
+          {
+            "not": {
+              "tableExists": {
+                "tableName": "primitive_data_type"
+              }
+            }
+          }
+        ],
+        "changes": [
+          {
+            "sqlFile": {
+              "path": "classpath:database/sql/update_001.sql",
+              "stripComments": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

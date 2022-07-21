@@ -23,3 +23,13 @@
 hs_err_pid*
 /target/
 .settings/
+
+# Eclipse
+#*.classpath
+#.classpath
+#*.project
+#.project
+
+# Properties
+*.properties
+!*.template.properties
