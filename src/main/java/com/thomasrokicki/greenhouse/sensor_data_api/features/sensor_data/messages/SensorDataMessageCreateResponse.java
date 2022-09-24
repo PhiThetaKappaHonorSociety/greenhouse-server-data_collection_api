@@ -1,8 +1,6 @@
 package com.thomasrokicki.greenhouse.sensor_data_api.features.sensor_data.messages;
 
-import com.thomasrokicki.greenhouse.sensor_data_api.utilities.controller_models.ApiResponse;
-
-public class SensorDataMessageCreateResponse implements ApiResponse {
+public class SensorDataMessageCreateResponse {
 
 	private String sensorUUID;
 	private Integer samplesToBeProcessedCount;

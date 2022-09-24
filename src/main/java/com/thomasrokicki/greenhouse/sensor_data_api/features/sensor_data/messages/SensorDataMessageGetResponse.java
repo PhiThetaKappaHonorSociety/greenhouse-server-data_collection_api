@@ -2,9 +2,7 @@ package com.thomasrokicki.greenhouse.sensor_data_api.features.sensor_data.messag
 
 import java.time.ZonedDateTime;
 
-import com.thomasrokicki.greenhouse.sensor_data_api.utilities.controller_models.ApiResponse;
-
-public class SensorDataMessageGetResponse implements ApiResponse {
+public class SensorDataMessageGetResponse {
 
 	private String sensorDataUUID;
 	private ZonedDateTime createdAtTsz;

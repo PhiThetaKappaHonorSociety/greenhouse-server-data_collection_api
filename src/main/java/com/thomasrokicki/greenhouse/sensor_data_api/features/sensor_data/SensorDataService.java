@@ -17,7 +17,6 @@ import com.thomasrokicki.greenhouse.sensor_data_api.features.sensor_data.message
 import com.thomasrokicki.greenhouse.sensor_data_api.features.sensor_data.messages.SensorDataMessageCreateRequestSample;
 import com.thomasrokicki.greenhouse.sensor_data_api.features.sensor_data.messages.SensorDataMessageCreateResponse;
 import com.thomasrokicki.greenhouse.sensor_data_api.features.sensor_data.messages.SensorDataMessageGetResponse;
-import com.thomasrokicki.greenhouse.sensor_data_api.utilities.controller_models.ApiResponse;
 import com.thomasrokicki.greenhouse.sensor_data_api.utilities.exceptions.ApiResponseNotFoundError;
 import com.thomasrokicki.greenhouse.sensor_data_api.utilities.exceptions.BadRequestErrorResponse;
 import com.thomasrokicki.greenhouse.sensor_data_api.utilities.time.TimeHelper;
@@ -154,7 +153,7 @@ public class SensorDataService {
 		return response;
 	}
 
-	public ApiResponse getMany(String sensorUUID) {
+	public List<SensorDataMessageGetResponse> getMany(String sensorUUID) {
 		final String methodLabel = "In getMany(): ";
 
 		// TODO Add paging, query params, and averaging

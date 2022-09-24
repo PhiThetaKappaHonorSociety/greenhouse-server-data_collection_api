@@ -3,9 +3,8 @@ package com.thomasrokicki.greenhouse.sensor_data_api.features.sensor_data.messag
 import java.util.List;
 
 import com.thomasrokicki.greenhouse.sensor_data_api.features.sensor.SensorDao;
-import com.thomasrokicki.greenhouse.sensor_data_api.utilities.controller_models.ApiResponse;
 
-public class SensorDataMessageGetManyResponse implements ApiResponse {
+public class SensorDataMessageGetManyResponse {
 
 	private String sensorDataUUID;
 	private SensorDao sensor;

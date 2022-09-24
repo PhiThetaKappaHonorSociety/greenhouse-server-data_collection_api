@@ -2,9 +2,7 @@ package com.thomasrokicki.greenhouse.sensor_data_api.features.sensor_data.messag
 
 import java.util.List;
 
-import com.thomasrokicki.greenhouse.sensor_data_api.utilities.controller_models.ApiResponse;
-
-public class SensorDataMessageCreateRequest implements ApiResponse {
+public class SensorDataMessageCreateRequest {
 
 	private String sensorUUID;
 	private List<SensorDataMessageCreateRequestSample> samples;
